@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contacts.css">
+    <script defer src="js/contacts.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <!-- Затемнение -->
+    <div class="overlay"></div>
+
+    <!-- Контейнер формы -->
+    <div class="contact-container">
+        <h1>📩 Свяжитесь со мной</h1>
+        <p>Заполните форму, и я отвечу вам как можно скорее!</p>
+
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Ваше имя" required>
+            <input type="text" id="telegram" placeholder="Телеграм (@username или номер)" required>
+            <textarea id="message" placeholder="Ваше сообщение" required></textarea>
+            <button type="submit" class="btn">🚀 Отправить</button>
+        </form>
+
+        <p id="response-message" class="hidden">✅ Сообщение отправлено!</p>
+    </div>
+
+    <!-- Навигация -->
+    <nav class="nav-buttons">
+        <a href="index.html"><i class="fa-solid fa-house"></i></a>
+        <a href="about.html"><i class="fa-solid fa-user"></i></a>
+        <a href="projects.html"><i class="fa-solid fa-folder"></i></a>
+        <a href="goals.html"><i class="fa-solid fa-pen"></i></a>
+        <a href="contacts.html"><i class="fa-solid fa-envelope"></i></a>
+    </nav>
+
+</body>
+</html>
